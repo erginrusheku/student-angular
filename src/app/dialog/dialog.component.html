@@ -1,0 +1,25 @@
+<h2 mat-dialog-title class="custom-title-class">Add Classrooms</h2>
+<mat-dialog-content>
+    <h2>Classrooms:</h2>
+  <mat-form-field>
+<input matInput  class="mat-input-element" [(ngModel)]="classroom.classrooms">
+</mat-form-field>
+<!--<h2>Last Name:</h2>
+  <mat-form-field>
+    <input matInput  class="mat-input-element" [(ngModel)]="user.lastName">
+  </mat-form-field> -->
+  <h2>Student:</h2>
+  
+  <mat-form-field>
+ <mat-label>Name:</mat-label>
+ <input matInput  class="mat-input-element" [(ngModel)]="classroom.student.name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>City:</mat-label>
+    <input matInput  class="mat-input-element" [(ngModel)]="classroom.student.lastName">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button class="mat-dialog-actions button.mat-button" (click)="add()">Add</button>
+  <button mat-button class="mat-dialog-actions button.mat-button:last-child" (click)="dialogRef.close()">Cancel</button>
+</mat-dialog-actions>

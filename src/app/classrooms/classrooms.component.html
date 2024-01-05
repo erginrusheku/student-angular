@@ -1,0 +1,40 @@
+<button mat-button class="add-button" (click)="openAddUserDialog()">Add</button>
+
+
+<div>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Classrooms </th>
+    <td mat-cell *matCellDef="let element"> {{element.classrooms}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+ <!-- <ng-container matColumnDef="lastName">
+    <th mat-header-cell *matHeaderCellDef> Last Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+  </ng-container> --> 
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="address">
+    <th mat-header-cell *matHeaderCellDef> Students </th>
+    <td mat-cell *matCellDef="let element"> name: {{element.student.name}}, Last Name: {{element.student.lastName}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="actions">
+  <th mat-header-cell *matHeaderCellDef> Actions </th>
+  <td mat-cell *matCellDef="let element">
+    <button mat-button (click)="openEditDialog(element)">Edit</button>
+    <button mat-button (click)="openDeleteDialog(element)">Delete</button>
+      <button mat-button (click)="openViewDialog(element)">View</button>
+  </td>
+</ng-container>
+
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</div>
+

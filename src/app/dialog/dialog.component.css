@@ -1,0 +1,34 @@
+/* CSS for the dialog content */
+.mat-dialog-content {
+  padding: 16px; /* Adjust padding as needed */
+}
+
+/* CSS for the input fields in the dialog */
+.mat-input-element {
+  width: 100%; /* Set the width of the input fields as needed */
+  margin: 8px 0; /* Add vertical spacing between inputs */
+}
+
+/* CSS for the Add button */
+.mat-dialog-actions button.mat-button {
+  background-color: #007acc; /* Set the background color to your preference */
+  color: #fff; /* Set the text color to white or any color you like */
+  border: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px; /* Add margin between buttons */
+}
+
+/* CSS for the Cancel button */
+.mat-dialog-actions button.mat-button:last-child {
+  background-color: #ffffff; /* Change the background color for the Cancel button */
+  color: #ffffff; /* Set the text color to white or any color you like */
+  border: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+}
+

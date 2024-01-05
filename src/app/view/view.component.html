@@ -1,0 +1,30 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <div>
+    <mat-form-field>
+      <mat-label>Classrooms</mat-label>
+      <input matInput formControlName="name" [readonly]="true">
+    </mat-form-field>
+  </div>
+
+<mat-label>Students</mat-label>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="city" [readonly]="true">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="street" [readonly]="true">
+    </mat-form-field>
+  </div>
+
+  <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
+
+</form>
+
+
+
